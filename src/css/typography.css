@@ -6,6 +6,19 @@ body {
   font-weight: var(--font-weight-light);
 }
 
-h1 {
+h1,
+h2,
+h3 {
   font-family: var(--josefin-sans);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  line-height: 1.3;
 }
