@@ -11,5 +11,36 @@
   margin: 0;
   padding: 0;
 }
+body{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container{
+  max-width: 1440px;
+  padding: 40px 80px ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
 
-/*Styles*/
+
+}
+header,.header-container{
+  min-height: 370px;
+  width: 100%;
+  background-image: url(/src/assets/images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.nav-menu{
+  display: flex;
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  color: white;
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+
