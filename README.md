@@ -2,7 +2,7 @@
 
 **<h2>Demo</h2>**
 
-[Nothing yet]()
+[View Demo](https://loop-studios-page.netlify.app/)
 
 **<h2>Setup the project</h2>**
 
