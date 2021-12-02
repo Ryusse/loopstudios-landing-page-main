@@ -1,12 +1,31 @@
 /*Typography*/
 
-body {
+html {
   font-size: 16px;
+}
+
+body{
   font-family: var(--alata);
 }
 
-h1 {
+h1,
+h2,
+h3 {
+  font-family: var(--josefin-sans);
+  font-weight: var(--font-weight-regular);
+  text-transform: uppercase;
 }
 
 h2 {
+  font-size: clamp(2rem, 1vw + 1rem, 2.5rem);
+}
+
+h3 {
+  font-size: clamp(1.35rem, 1vw + 1rem, 1.8rem);
+  line-height: 1.3;
+}
+
+p {
+  font-size: clamp(1rem, 1vw + 1rem, 1rem);
+  font-weight: var(--font-weight-light);
 }
