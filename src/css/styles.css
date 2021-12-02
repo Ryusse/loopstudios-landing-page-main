@@ -87,6 +87,7 @@ body {
 
 .navbar__list {
   display: flex;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -107,18 +108,33 @@ body {
 
 /*Section 2 */
 
-.section-2__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.section-2 {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    'title button'
+    'grid   grid ';
+}
+
+.section-2__title {
+  grid-area: title;
 }
 
 .button {
+  grid-area: button;
+
+  justify-self: center;
+  max-width: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   border: 1px solid var(--black);
-  padding: 0.6rem 1.5rem;
+  padding: 0.8rem 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
   color: var(--black);
   transition: all 0.2s ease-in-out;
 }
@@ -130,6 +146,7 @@ body {
 }
 
 .grid {
+  grid-area: grid;
   margin: 5rem 0;
   display: grid;
   gap: 2.5rem;
@@ -161,7 +178,6 @@ body {
 }
 
 .card__title {
-  opacity: 0.8;
   color: var(--white);
   margin: 2rem 2.5rem;
   transition: all 0.2s ease-in-out;
@@ -169,7 +185,6 @@ body {
 
 .card:hover .card__title,
 .card:focus .card__title {
-  opacity: 1;
   z-index: 1;
   color: var(--black);
 }
@@ -213,6 +228,82 @@ body {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/desktop/image-fisheye.jpg') no-repeat center;
   background-size: cover;
 }
+
+@media (max-width: 780px) {
+  .section-2 {
+    grid-template-areas:
+      'title  title'
+      ' grid   grid'
+      'button button';
+  }
+
+  .section-2__title {
+    text-align: center;
+  }
+
+  .grid {
+    margin: 2.9rem 0;
+  }
+
+  .button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 780px) {
+  .card {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    height: 8rem;
+  }
+
+  .card__title {
+    margin: 1rem;
+  }
+
+  .card:nth-child(1) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-deep-earth.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(2) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-night-arcade.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(3) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-soccer-team.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(4) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-grid.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(5) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-from-above.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(6) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-pocket-borealis.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(7) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-curiosity.jpg') no-repeat center;
+    background-size: cover;
+  }
+
+  .card:nth-child(8) {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url('../assets/images/mobile/image-fisheye.jpg') no-repeat center;
+    background-size: cover;
+  }
+}
 /*Section 2 end*/
 
 /*Sections end*/
@@ -232,7 +323,7 @@ body {
 }
 
 .footer .navbar {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .footer .social {
@@ -242,8 +333,29 @@ body {
 }
 
 .footer .copyright {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   color: var(--very-dark-gray);
+}
+
+@media (max-width: 780px) {
+  .footer__container,
+  .footer .navbar__list {
+    flex-direction: column;
+  }
+
+  .footer .left,
+  .footer .right {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .footer .social {
+    margin-top: 3.5rem;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 }
 
 /*Footer end*/
