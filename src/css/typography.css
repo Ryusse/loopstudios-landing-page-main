@@ -4,6 +4,10 @@ html {
   font-size: 16px;
 }
 
+body{
+  font-family: var(--alata);
+}
+
 h1,
 h2,
 h3 {
@@ -23,6 +27,5 @@ h3 {
 
 p {
   font-size: clamp(1rem, 1vw + 1rem, 1rem);
-  font-family: var(--alata);
   font-weight: var(--font-weight-light);
 }
