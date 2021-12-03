@@ -17,8 +17,8 @@ h3 {
 }
 
 h1 {
-  font-size: clamp(1.6rem, 1vw + 1.5rem, 4rem);
-  letter-spacing: 0.3rem;
+  font-size: clamp(1rem, 1.8vw + 1.5rem, 6rem);
+  letter-spacing: 0.25rem;
   line-height: 1.1;
 }
 
