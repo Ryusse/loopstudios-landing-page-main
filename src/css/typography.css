@@ -32,7 +32,7 @@ h3 {
 }
 
 p {
-  font-size: clamp(1rem, 0.2vw + 1rem, 1.5rem);
+  font-size: clamp(1rem, 0.1vw + 1rem, 1.5rem);
   font-weight: var(--font-weight-regular);
   color: var(--dark-gray);
   line-height: 1.6;

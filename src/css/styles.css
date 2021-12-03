@@ -255,7 +255,7 @@ body.open {
   grid-row: 2/3;
 
   background-color: var(--white);
-  padding: 4.5rem;
+  padding: 3.5rem;
 }
 
 .content__title {
