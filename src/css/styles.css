@@ -110,13 +110,13 @@ body.open {
   display: none;
 }
 
-.navbar__list {
+.nav__list {
   display: flex;
   align-items: center;
   gap: 2rem;
 }
 
-.navbar__link {
+.nav__link {
   color: var(--white);
   opacity: 1;
 }
@@ -138,7 +138,7 @@ body.open {
 }
 
 @media (max-width: 780px) {
-  .header .navbar {
+  .header .nav {
     display: none;
   }
 
@@ -147,7 +147,7 @@ body.open {
     position: relative;
     width: 26px;
     height: 18px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .hamburger__line {
@@ -191,6 +191,7 @@ body.open {
   }
 
   .menu {
+    z-index: 1;
     position: fixed;
     display: flex;
     top: 0;
@@ -528,7 +529,7 @@ body.open {
 
 @media (max-width: 780px) {
   .footer__container,
-  .footer .navbar__list {
+  .footer .nav__list {
     flex-direction: column;
   }
 
