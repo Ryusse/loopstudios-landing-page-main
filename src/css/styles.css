@@ -78,7 +78,6 @@ body {
 .header {
   margin: auto;
   max-width: var(--max-width);
-
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -107,7 +106,38 @@ body {
 }
 
 /*Hero end*/
-
+.leader-in-vr {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+.image-hero {
+  /* border: 1px solid red; */
+  transform: skewX(10deg);
+  animation-name: hero;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.vr-text {
+  padding: 30px;
+  height: 200px;
+  position: relative;
+  top: 241px;
+  right: 150px;
+  background: white;
+  max-width: 400px;
+}
+.vr-text h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.vr-text p {
+  font-size: 16px;
+  color: gray;
+}
 /*Sections*/
 
 .section {
