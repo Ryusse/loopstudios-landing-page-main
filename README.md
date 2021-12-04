@@ -5,7 +5,7 @@
 
 [View Demo](https://loop-studios-page.netlify.app/)
 
-**<h2>Build with</h2>**
+**<h2>Build with 🏗</h2>**
 
 * html
 * css
