@@ -113,7 +113,7 @@ body {
 }
 .image-hero {
   /* border: 1px solid red; */
-  transform: skewX(10deg);
+  
   animation-name: hero;
   animation-duration: 5s;
   animation-timing-function: linear;
