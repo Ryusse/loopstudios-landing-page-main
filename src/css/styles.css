@@ -109,8 +109,17 @@ body.open {
 .menu {
   display: none;
 }
-
-.nav__list {
+<<<<<<< HEAD .header-message {
+  color: white;
+  border: 1px solid white;
+  width: 500px;
+  font-size: 70px;
+  padding: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 120px;
+}
+=======>>>>>>>dev .nav__list {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -229,7 +238,38 @@ body.open {
 }
 
 /*Hero end*/
+.leader-in-vr {
+  margin: 100px;
+  display: flex;
+  justify-content: center;
+}
+.image-hero {
+  /* border: 1px solid red; */
 
+  animation-name: hero;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.vr-text {
+  padding: 30px;
+  height: 200px;
+  position: relative;
+  top: 241px;
+  right: 150px;
+  background: white;
+  max-width: 400px;
+}
+.vr-text h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.vr-text p {
+  font-size: 16px;
+  color: gray;
+}
 /*Sections*/
 
 .section {
